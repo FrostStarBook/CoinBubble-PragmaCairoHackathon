@@ -1,0 +1,35 @@
+{
+  "_$ver": 1,
+  "_$id": "j9fo4n50",
+  "_$type": "Image",
+  "name": "image",
+  "width": 92,
+  "height": 92,
+  "mouseEnabled": true,
+  "hitTestPrior": true,
+  "color": "#ffffff",
+  "_$comp": [
+    {
+      "_$type": "af3856be-c65a-4b5d-b9ef-278f27223777",
+      "scriptPath": "../src/game/GameBlock.ts",
+      "image": {
+        "_$ref": "j9fo4n50"
+      },
+      "Text": {
+        "_$ref": "1xlp69gw"
+      }
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "1xlp69gw",
+      "_$type": "Text",
+      "name": "Text",
+      "width": 48,
+      "height": 48,
+      "fontSize": 26,
+      "color": "#FFFFFF",
+      "leading": 0
+    }
+  ]
+}
