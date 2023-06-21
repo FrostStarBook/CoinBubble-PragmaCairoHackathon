@@ -1,6 +1,5 @@
 
 export class NetMgr {
-    mud:any;
     private constructor() {
     }
 
@@ -11,12 +10,6 @@ export class NetMgr {
             NetMgr.instance = new NetMgr()
         }
         return NetMgr.instance;
-    }
-    public SetMud(mud:any){
-        this.mud = mud;
-    }
-    public GetMud():any{
-        return this.mud;
     }
 }
  
