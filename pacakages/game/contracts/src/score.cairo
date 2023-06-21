@@ -38,8 +38,4 @@ mod score {
         record::read(address)
     }
 
-    #[test]
-    fn test(address: ContractAddress, scord: u128) {
-        update_record(address, scord);
-    }
 }
