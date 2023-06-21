@@ -510,7 +510,6 @@ export class Game extends GameBase {
           const block = nextBlocks[i];
           block.x = this.randMgr.randomNum(minX,maxX);
           block.y = this.randMgr.randomNum(minY,maxY);
-          // 填充层级关系
           for (let j = 0; j < curBlocks.length; j++) {
             const element = curBlocks[j];
             if(this.checkOverLap(block,element)){
@@ -549,7 +548,7 @@ export class Game extends GameBase {
         }
       }
       else{
-        console.log("验证失败！");
+        console.log("failed!");
       }
      
   }
