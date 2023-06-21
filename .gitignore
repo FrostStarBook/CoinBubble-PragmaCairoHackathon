@@ -2,3 +2,5 @@ node_modules
 /packages/game.contracts/target/
 /.idea/
 *.json
+
+.pkey
