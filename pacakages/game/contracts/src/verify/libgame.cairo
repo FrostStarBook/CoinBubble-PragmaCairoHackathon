@@ -5,8 +5,6 @@ mod LibGame {
     use box::BoxTrait;
     use starknet::ContractAddress;
 
-    // use verify::LibRand;
-    // use verify::util;
 
     enum GameConfigType {
         SlotNum: (),
