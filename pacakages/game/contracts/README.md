@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".github/mark-dark.svg">
-  <img alt="Dojo logo" align="right" width="120" src=".github/mark-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="packages/game/contracts/.githubs/game/contracts/.github/mark-dark.svg">
+  <img alt="Dojo logo" align="right" width="120" src="packages/game/contracts/.githubs/game/contracts/.github/mark-light.svg">
 </picture>
 
 <a href="https://twitter.com/dojostarknet">
