@@ -1,0 +1,14 @@
+{
+  "_$ver": 1,
+  "_$id": "c22qcn6l",
+  "_$runtime": "res://1377d1e8-a747-4889-9f22-ef2284ac8263",
+  "_$preloads": [
+    "res://"
+  ],
+  "_$type": "Dialog",
+  "name": "Dialog",
+  "width": 670,
+  "height": 430,
+  "mouseEnabled": true,
+  "isModal": true
+}
