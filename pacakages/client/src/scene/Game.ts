@@ -1,12 +1,24 @@
 const { regClass, property } = Laya;
 
- 
-import {GameConfigType,BlockType,ChessBoardUnitType, GameManagerEvent, RemoveRuleType, GameResultType, BlockStatusType, GameConfig, defaultGameConfig, MoveDeltaX, BlockSize, MoveDeltaY} from '../common/Config'
-import { NetMgr } from '../common/NetMgr';
-import { RandomMgr } from '../common/RandomMgr';
-import { GameBlock } from '../game/GameBlock';
-import { GameBase } from './Game.generated';
- 
+
+import {
+    BlockSize,
+    BlockStatusType,
+    BlockType,
+    ChessBoardUnitType,
+    GameConfig,
+    GameConfigType,
+    GameManagerEvent,
+    GameResultType,
+    MoveDeltaX,
+    MoveDeltaY,
+    RemoveRuleType
+} from '../common/Config'
+import {NetMgr} from '../common/NetMgr';
+import {RandomMgr} from '../common/RandomMgr';
+import {GameBlock} from '../game/GameBlock';
+import {GameBase} from './Game.generated';
+
 @regClass()
 export class Game extends GameBase {
     
@@ -28,11 +40,33 @@ export class Game extends GameBase {
     slotCardMoveSpeed:number = 0.5;
     playerOpCards:number[];
     stageNum:number = 0;
+    
     getgameconfig(level:number):GameConfig{
-      //todo lib game
-      return
+        if (level < 1) {
+            throw new Error("level min error");
+        }
+        if (level > 160) {
+            throw new Error("level max error");
+        }
+
+        return {
+            slotNum: Math.min(5 + level / 20, 9),
+            composeNumMin: Math.min(2 + level / 80, 3),
+            composeNumMax: Math.min(3 + level / 10, 7),
+            typeNum: Math.min(4 + level / 10, 18),
+            levelBlockInitNum: 1 + Math.floor(level / 20),
+            borderStep: Math.max(3, 6 - Math.floor(level / 20)),
+            levelNum: Math.min(8, Math.floor(level / 10) + 3),
+            cardSize: 60,
+            removeRule: RemoveRuleType.CONTINUE,
+            viewWidth: 640,
+            viewHeight: 480,
+            totalRangeNum: Math.min(10 + level / 10, 30),
+            stageNum: Math.min(1 + level / 30, 5)
+        };
 
     }
+    
     async onAwake() {
         console.log("Game start");
         await Laya.loader.load("resources/prefab/P_block.lh").then((res)=>{
