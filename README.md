@@ -68,3 +68,22 @@ We use ArgentX's account wallet for game contract testing.
     │
     └── herodotus                         --- herodotus
 ```
+
+## QuickStart
+
+### build game client
+
+```shell
+pnpm install 
+```
+
+### [build dojo](https://github.com/liushuheng163/CoinBubble-PragmaCairoHackathon/tree/main/pacakages/game/contracts)
+
+
+### [build deploy](https://github.com/liushuheng163/CoinBubble-PragmaCairoHackathon/blob/main/pacakages/game/deploy/README.md)
+
+### download laya ide
+
+### import project
+
+### have fun！
