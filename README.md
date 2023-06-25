@@ -71,19 +71,29 @@ We use ArgentX's account wallet for game contract testing.
 
 ## QuickStart
 
-### build game client
+## 1.build game client
 
 ```shell
 pnpm install 
 ```
 
-### [build dojo](https://github.com/liushuheng163/CoinBubble-PragmaCairoHackathon/tree/main/pacakages/game/contracts)
+## 2.build dojo
+
+Refer to the sub -document configuration of the local environment, the Cairo environment, and the dojo development component
+[build dojo](https://github.com/liushuheng163/CoinBubble-PragmaCairoHackathon/tree/main/pacakages/game/contracts)
 
 
-### [build deploy](https://github.com/liushuheng163/CoinBubble-PragmaCairoHackathon/blob/main/pacakages/game/deploy/README.md)
 
-### download laya ide
+## 3.build deploy
+Refer to this document for the convenience of constructing contracts and deployment contracts to Starknet
+[build deploy](https://github.com/liushuheng163/CoinBubble-PragmaCairoHackathon/blob/main/pacakages/game/deploy/README.md)
 
-### import project
 
-### have fun！
+## 4.download laya ide
+
+
+
+## 5.import project
+Just import the client package
+
+## 6.have fun！
